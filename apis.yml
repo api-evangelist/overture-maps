@@ -1,0 +1,225 @@
+aid: overture-maps
+url: https://raw.githubusercontent.com/api-evangelist/overture-maps/refs/heads/main/apis.yml
+name: Overture Maps Foundation
+kind: company
+description: >-
+  Overture Maps Foundation is a Linux Foundation collaborative project that
+  produces free, open, and interoperable map data. Overture publishes
+  cloud-native GeoParquet datasets, on a regular release cadence, across six
+  themes - Addresses, Base, Buildings, Divisions, Places, and Transportation -
+  governed by a common conflation pipeline and an open schema. Rather than a
+  hosted REST API, Overture distributes data through Amazon S3 and Microsoft
+  Azure (and via partner mirrors on BigQuery, Snowflake, Databricks, Fused,
+  Wherobots), and provides an open Python CLI, a tile generator, and an
+  Explorer site for developers. Founding members include Amazon, Meta,
+  Microsoft, and TomTom.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Maps
+  - Geospatial
+  - Open Data
+  - GeoParquet
+  - Open Source
+  - Linux Foundation
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.19'
+apis:
+  - aid: overture-maps:addresses
+    name: Overture Addresses Theme
+    description: >-
+      Open dataset of global address points and ranges, released as
+      cloud-native GeoParquet alongside the other Overture themes.
+    humanURL: https://docs.overturemaps.org/guides/addresses/
+    baseURL: https://docs.overturemaps.org/guides/addresses/
+    tags:
+      - Theme
+      - Addresses
+      - GeoParquet
+    properties:
+      - type: Documentation
+        url: https://docs.overturemaps.org/guides/addresses/
+  - aid: overture-maps:base
+    name: Overture Base Theme
+    description: >-
+      Open dataset of base map features - land cover, water, land use, infra -
+      released as cloud-native GeoParquet to serve as a foundation for map
+      rendering.
+    humanURL: https://docs.overturemaps.org/guides/base/
+    baseURL: https://docs.overturemaps.org/guides/base/
+    tags:
+      - Theme
+      - Base
+      - GeoParquet
+    properties:
+      - type: Documentation
+        url: https://docs.overturemaps.org/guides/base/
+  - aid: overture-maps:buildings
+    name: Overture Buildings Theme
+    description: >-
+      Open dataset of global building footprints with attributes (heights,
+      classes, sources), released as cloud-native GeoParquet.
+    humanURL: https://docs.overturemaps.org/guides/buildings/
+    baseURL: https://docs.overturemaps.org/guides/buildings/
+    tags:
+      - Theme
+      - Buildings
+      - GeoParquet
+    properties:
+      - type: Documentation
+        url: https://docs.overturemaps.org/guides/buildings/
+  - aid: overture-maps:divisions
+    name: Overture Divisions Theme
+    description: >-
+      Open dataset of administrative and statistical boundaries (countries,
+      regions, counties, localities, neighborhoods) released as cloud-native
+      GeoParquet.
+    humanURL: https://docs.overturemaps.org/guides/divisions/
+    baseURL: https://docs.overturemaps.org/guides/divisions/
+    tags:
+      - Theme
+      - Divisions
+      - Boundaries
+      - GeoParquet
+    properties:
+      - type: Documentation
+        url: https://docs.overturemaps.org/guides/divisions/
+  - aid: overture-maps:places
+    name: Overture Places Theme
+    description: >-
+      Open dataset of global points of interest - businesses, landmarks, and
+      services - released as cloud-native GeoParquet with categories,
+      addresses, and confidence scoring.
+    humanURL: https://docs.overturemaps.org/guides/places/
+    baseURL: https://docs.overturemaps.org/guides/places/
+    tags:
+      - Theme
+      - Places
+      - POI
+      - GeoParquet
+    properties:
+      - type: Documentation
+        url: https://docs.overturemaps.org/guides/places/
+  - aid: overture-maps:transportation
+    name: Overture Transportation Theme
+    description: >-
+      Open dataset of the global road and transportation network (segments
+      and connectors) released as cloud-native GeoParquet, suitable for
+      routing and analytics.
+    humanURL: https://docs.overturemaps.org/guides/transportation/
+    baseURL: https://docs.overturemaps.org/guides/transportation/
+    tags:
+      - Theme
+      - Transportation
+      - Routing
+      - GeoParquet
+    properties:
+      - type: Documentation
+        url: https://docs.overturemaps.org/guides/transportation/
+  - aid: overture-maps:schema
+    name: Overture Schema
+    description: >-
+      Canonical open schema specification for all Overture themes, maintained
+      in the OvertureMaps/schema GitHub repository and versioned with each
+      data release.
+    humanURL: https://docs.overturemaps.org/schema/
+    baseURL: https://github.com/OvertureMaps/schema
+    tags:
+      - Schema
+      - Open Source
+      - Specification
+    properties:
+      - type: Repository
+        url: https://github.com/OvertureMaps/schema
+      - type: Documentation
+        url: https://docs.overturemaps.org/schema/
+  - aid: overture-maps:data
+    name: Overture Data Releases
+    description: >-
+      Repository of release notes, cloud paths (Amazon S3 and Microsoft
+      Azure), and access scripts for every Overture data release. Datasets are
+      distributed as cloud-native GeoParquet and versioned per release.
+    humanURL: https://docs.overturemaps.org/release/latest/
+    baseURL: https://github.com/OvertureMaps/data
+    tags:
+      - Releases
+      - Open Data
+      - GeoParquet
+    properties:
+      - type: Repository
+        url: https://github.com/OvertureMaps/data
+      - type: Documentation
+        url: https://docs.overturemaps.org/release/latest/
+  - aid: overture-maps:cli
+    name: Overture Maps Python CLI
+    description: >-
+      Open-source Python command-line tool and library for downloading and
+      querying Overture data. Maintained at OvertureMaps/overturemaps-py.
+    humanURL: https://github.com/OvertureMaps/overturemaps-py
+    baseURL: https://github.com/OvertureMaps/overturemaps-py
+    tags:
+      - CLI
+      - Python
+      - Open Source
+    properties:
+      - type: Repository
+        url: https://github.com/OvertureMaps/overturemaps-py
+  - aid: overture-maps:explorer
+    name: Overture Explorer
+    description: >-
+      Interactive web explorer for browsing and inspecting Overture features
+      across themes and releases.
+    humanURL: https://explore.overturemaps.org/
+    baseURL: https://explore.overturemaps.org/
+    tags:
+      - Explorer
+      - Web
+      - Visualization
+    properties:
+      - type: Application
+        url: https://explore.overturemaps.org/
+  - aid: overture-maps:tiles
+    name: Overture Tiles
+    description: >-
+      Open tile-generation tooling that builds vector tilesets from Overture
+      data for rendering and downstream applications.
+    humanURL: https://github.com/OvertureMaps/overture-tiles
+    baseURL: https://github.com/OvertureMaps/overture-tiles
+    tags:
+      - Tiles
+      - Rendering
+      - Open Source
+    properties:
+      - type: Repository
+        url: https://github.com/OvertureMaps/overture-tiles
+common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/overture-maps-foundation
+  - type: Website
+    url: https://overturemaps.org/
+  - type: Documentation
+    url: https://docs.overturemaps.org/
+  - type: GitHub
+    url: https://github.com/OvertureMaps
+  - type: Plans
+    url: plans/overture-maps-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/overture-maps-rate-limits.yml
+  - type: FinOps
+    url: finops/overture-maps-finops.yml
+  - type: Integrations
+    url: https://docs.overturemaps.org/getting-data/
+integrations:
+  - name: Amazon S3
+  - name: Microsoft Azure
+  - name: BigQuery
+  - name: Snowflake
+  - name: Databricks
+  - name: Fused
+  - name: Wherobots
+  - name: DuckDB
+  - name: ArcGIS
+  - name: QGIS
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
