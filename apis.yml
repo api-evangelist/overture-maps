@@ -209,7 +209,7 @@ common:
     url: finops/overture-maps-finops.yml
   - type: Integrations
     url: https://docs.overturemaps.org/getting-data/
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://docs.overturemaps.org/llms.txt
 integrations:
   - name: Amazon S3
