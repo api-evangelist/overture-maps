@@ -205,6 +205,9 @@ apis:
       - type: Repository
         url: https://github.com/OvertureMaps/overture-tiles
 common:
+  - type: License
+    name: CC-BY-4.0
+    url: https://github.com/OvertureMaps/schema/blob/main/LICENSE
   - type: DomainSecurity
     url: security/overture-maps-domain-security.yml
   - type: LinkedIn
