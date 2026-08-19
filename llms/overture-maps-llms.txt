@@ -1,0 +1,250 @@
+# Overture Documentation
+
+This file contains links to documentation sections following the llmstxt.org standard.
+
+## Table of Contents
+
+- [Accessing the Overture Catalog](https://docs.overturemaps.org/getting-data/cloud-sources/): All of Overture's data offerings
+- [BigQuery](https://docs.overturemaps.org/getting-data/data-mirrors/bigquery/): Overture data is accessible in Google BigQuery as part of the [Google Cloud Public Dataset Program](https://cloud.google.com/bigquery/public-data),...
+- [Databricks](https://docs.overturemaps.org/getting-data/data-mirrors/databricks/): Overture data is accessible through the [Databricks Marketplace](https://marketplace.databricks.com/?searchKey=CARTO&sortBy=date) via public listin...
+- [Fused](https://docs.overturemaps.org/getting-data/data-mirrors/fused/): [Fused](https://www.fused.io/) is a cloud analytics platform to process data with [User Defined Functions](https://docs.fused.io/core-concepts/writ...
+- [Data Mirrors](https://docs.overturemaps.org/getting-data/data-mirrors/): In addition to the official Overture sources on Amazon S3 and Microsoft Azure Blob Storage, several Overture Maps Foundation members and partners m...
+- [Snowflake](https://docs.overturemaps.org/getting-data/data-mirrors/snowflake/): Overture data is accessible through the [Snowflake Data Marketplace](https://app.snowflake.com/marketplace/providers/GZT0ZKUCHE3/CARTO) via public ...
+- [Wherobots](https://docs.overturemaps.org/getting-data/data-mirrors/wherobots/): Wherobots is a cloud-native environment for geospatial data processing, powered by Apache Sedona. Their hosted notebook environments and data pipel...
+- [DuckDB](https://docs.overturemaps.org/getting-data/duckdb/): Querying the Overture datalog
+- [Explorer](https://docs.overturemaps.org/getting-data/explore/): No-code tool for exploring and downloading data
+- [Python Client](https://docs.overturemaps.org/getting-data/overturemaps-py/): Overture's official Python CLI and library
+- [Quickstart](https://docs.overturemaps.org/docs/getting-data/quick-start): Concise guide to get started with Overture data in a few minutes
+- [Overview](https://docs.overturemaps.org/guides/addresses/): A collection of global address points
+- [Bathymetry](https://docs.overturemaps.org/guides/base/bathymetry/): Underwater depth features in the base theme and how their coverage is defined
+- [Overview](https://docs.overturemaps.org/guides/base/): Bathymetry, Infrastructure, Land, Landuse, Landcover, and Water features.
+- [Infrastructure](https://docs.overturemaps.org/guides/base/infrastructure/): Transit, transportation support, and built-environment features in the base theme
+- [Overview](https://docs.overturemaps.org/guides/buildings/): 2.6 billion buildings and counting
+- [Overview](https://docs.overturemaps.org/guides/divisions/): Global administrative data, from microhoods to countries
+- [Guides](https://docs.overturemaps.org/guides/): Overture Maps guides
+- [Overview](https://docs.overturemaps.org/guides/places/): Points of interest around the world
+- [Taxonomy Browser](https://docs.overturemaps.org/guides/places/taxonomy-browser/): Browse and explore the Overture Places taxonomy hierarchy
+- [Taxonomy](https://docs.overturemaps.org/guides/places/taxonomy/): How we organize categories of places
+- [Overview](https://docs.overturemaps.org/guides/transportation/): Global road, rail, and water transportation data
+- [Linear Referencing](https://docs.overturemaps.org/guides/transportation/linear-referencing/): How Overture uses linear references to describe properties that vary along a segment
+- [Roads](https://docs.overturemaps.org/guides/transportation/roads/): Road-specific properties in the Overture transportation schema
+- [Scoping Rules and Travel Modes](https://docs.overturemaps.org/guides/transportation/scoping-and-travel-modes/): How property values are constrained by location, time, and subject in the transportation schema
+- [Segments and Connectors](https://docs.overturemaps.org/guides/transportation/segments-and-connectors/): Shape, connectivity, and linear referencing in the transportation schema
+- [Schema Reference](https://docs.overturemaps.org/schema/): Pydantic schemas for Overture Maps data
+- [Address](https://docs.overturemaps.org/schema/reference/addresses/address/): Addresses are structured labels for the geographic locations where businesses and individuals
+- [AddressLevel](https://docs.overturemaps.org/schema/reference/addresses/types/address_level/): A sub-country addressing unit, such as a region, city, or neighborhood, that is less specific
+- [Sources](https://docs.overturemaps.org/schema/reference/annex/sources/): Common schema definitions for data sources.
+- [BuildSource](https://docs.overturemaps.org/schema/reference/annex/types/build_source/): The ingest source for address data.
+- [Dataset](https://docs.overturemaps.org/schema/reference/annex/types/dataset/): Dataset definition for Overture Maps data sources.
+- [LicenseShortname](https://docs.overturemaps.org/schema/reference/annex/types/license_shortname/): Underlying type: `string`
+- [UpdateType](https://docs.overturemaps.org/schema/reference/annex/types/update_type/): Whether the data is continuously updated upstream or needs manual intervention.
+- [Bathymetry](https://docs.overturemaps.org/schema/reference/base/bathymetry/): Bathymetry features provide topographic representations of underwater areas, such as parts of
+- [Infrastructure](https://docs.overturemaps.org/schema/reference/base/infrastructure/): Infrastructure features provide basic information about real-world infrastructure entitites
+- [Land](https://docs.overturemaps.org/schema/reference/base/land/): Land features are representations of physical land surfaces.
+- [LandCover](https://docs.overturemaps.org/schema/reference/base/land_cover/): Land cover features indicate the primary natural or artificial surface material covering a land
+- [LandUse](https://docs.overturemaps.org/schema/reference/base/land_use/): Land use features specify the predominant human use of an area of land, for example commercial
+- [Depth](https://docs.overturemaps.org/schema/reference/base/types/depth/): Depth below surface level of the feature in meters.
+- [Elevation](https://docs.overturemaps.org/schema/reference/base/types/elevation/): Elevation above sea level of the feature in meters.
+- [Height](https://docs.overturemaps.org/schema/reference/base/types/height/): Height of the feature in meters.
+- [InfrastructureClass](https://docs.overturemaps.org/schema/reference/base/types/infrastructure_class/): Further classification of the type of infrastructure.
+- [InfrastructureSubtype](https://docs.overturemaps.org/schema/reference/base/types/infrastructure_subtype/): Broadest classification of the type of infrastructure.
+- [LandClass](https://docs.overturemaps.org/schema/reference/base/types/land_class/): Further classification of the land.
+- [LandCoverSubtype](https://docs.overturemaps.org/schema/reference/base/types/land_cover_subtype/): Primary or dominant material covering the land.
+- [LandSubtype](https://docs.overturemaps.org/schema/reference/base/types/land_subtype/): Broadest classification of the land.
+- [LandUseClass](https://docs.overturemaps.org/schema/reference/base/types/land_use_class/): Further classification of the land use.
+- [LandUseSubtype](https://docs.overturemaps.org/schema/reference/base/types/land_use_subtype/): Broadest classification of the land use.
+- [SourceTags](https://docs.overturemaps.org/schema/reference/base/types/source_tags/): Key-value pairs imported directly from the source data without change.
+- [SurfaceMaterial](https://docs.overturemaps.org/schema/reference/base/types/surface_material/): Material that makes up the surface of `Infrastructure` and `Land` features.
+- [WaterClass](https://docs.overturemaps.org/schema/reference/base/types/water_class/): Further description of the type of water body.
+- [WaterSubtype](https://docs.overturemaps.org/schema/reference/base/types/water_subtype/): The broad classification of water body such as river, ocean or lake.
+- [Water](https://docs.overturemaps.org/schema/reference/base/water/): Water features represent ocean and inland water bodies.
+- [Building](https://docs.overturemaps.org/schema/reference/buildings/building/): Buildings are man-made structures with roofs that exist permanently in one place.
+- [BuildingPart](https://docs.overturemaps.org/schema/reference/buildings/building_part/): Building parts represent parts of larger building features. They allow buildings to be modeled
+- [BuildingClass](https://docs.overturemaps.org/schema/reference/buildings/types/building_class/): Further classification of the type and purpose of a building.
+- [BuildingSubtype](https://docs.overturemaps.org/schema/reference/buildings/types/building_subtype/): Broadest classification of the type and purpose of a building.
+- [FacadeMaterial](https://docs.overturemaps.org/schema/reference/buildings/types/facade_material/): The outer surface material of building facade.
+- [RoofMaterial](https://docs.overturemaps.org/schema/reference/buildings/types/roof_material/): The outermost material of the roof.
+- [RoofOrientation](https://docs.overturemaps.org/schema/reference/buildings/types/roof_orientation/): Orientation of the roof shape relative to the footprint shape.
+- [RoofShape](https://docs.overturemaps.org/schema/reference/buildings/types/roof_shape/): The shape of the roof.
+- [CartographicHints](https://docs.overturemaps.org/schema/reference/common/cartographic_hints/): Cartographic hints for optimal use of Overture features in map-making.
+- [CommonNames](https://docs.overturemaps.org/schema/reference/common/common_names/): A mapping from language to the most commonly used or recognized name in that language.
+- [ConfidenceScore](https://docs.overturemaps.org/schema/reference/common/confidence_score/): Confidence score between 0.0 and 1.0
+- [FeatureVersion](https://docs.overturemaps.org/schema/reference/common/feature_version/): Underlying type: `int32`
+- [LengthUnit](https://docs.overturemaps.org/schema/reference/common/length_unit/): Unit of length.
+- [Level](https://docs.overturemaps.org/schema/reference/common/level/): Z-order of the feature where 0 is visual level
+- [MaxZoom](https://docs.overturemaps.org/schema/reference/common/max_zoom/): Recommended maximum tile zoom level in which this feature should be displayed.
+- [MinZoom](https://docs.overturemaps.org/schema/reference/common/min_zoom/): Recommended minimum tile zoom level in which this feature should be displayed.
+- [NameRule](https://docs.overturemaps.org/schema/reference/common/name_rule/): A rule that can be evaluated to determine the name in advanced scenarios.
+- [NameVariant](https://docs.overturemaps.org/schema/reference/common/name_variant/): Name variant used in a `NameRule`.
+- [Names](https://docs.overturemaps.org/schema/reference/common/names/): Multilingual names container.
+- [PerspectiveMode](https://docs.overturemaps.org/schema/reference/common/perspective_mode/): Perspective mode for disputed names.
+- [Perspectives](https://docs.overturemaps.org/schema/reference/common/perspectives/): Political perspectives container.
+- [Prominence](https://docs.overturemaps.org/schema/reference/common/prominence/): Subjective scale of feature significance or importance, with 1 being the least, and
+- [Heading](https://docs.overturemaps.org/schema/reference/common/scoping/heading/): Travel direction along an oriented path: forward or backward.
+- [LinearlyReferencedPosition](https://docs.overturemaps.org/schema/reference/common/scoping/linearly_referenced_position/): Represents a linearly-referenced position between 0% and 100% of the distance along a path such as a road segment or a river center-line segment.
+- [LinearlyReferencedRange](https://docs.overturemaps.org/schema/reference/common/scoping/linearly_referenced_range/): Represents a non-empty range of positions along a path as a pair linearly-referenced positions. For example, the pair [0.25, 0.5] represents the ra...
+- [OpeningHours](https://docs.overturemaps.org/schema/reference/common/scoping/opening_hours/): Time span or time spans during which something is open or active, specified in the OpenStreetMap
+- [PurposeOfUse](https://docs.overturemaps.org/schema/reference/common/scoping/purpose_of_use/): Reason why a person or entity travelling on the transportation network is using a particular
+- [RecognizedStatus](https://docs.overturemaps.org/schema/reference/common/scoping/recognized_status/): Status of the person or entity travelling as recognized by authorities controlling the particular
+- [Side](https://docs.overturemaps.org/schema/reference/common/scoping/side/): The side, left or right, on which something appears relative to a facing or heading direction
+- [TravelMode](https://docs.overturemaps.org/schema/reference/common/scoping/travel_mode/): Enumerates possible travel modes.
+- [VehicleAxleCountSelector](https://docs.overturemaps.org/schema/reference/common/scoping/vehicle_axle_count_selector/): Selects vehicles based on the number of axles they have.
+- [VehicleHeightSelector](https://docs.overturemaps.org/schema/reference/common/scoping/vehicle_height_selector/): Selects vehicles based on their height.
+- [VehicleLengthSelector](https://docs.overturemaps.org/schema/reference/common/scoping/vehicle_length_selector/): Selects vehicles based on their length.
+- [VehicleRelation](https://docs.overturemaps.org/schema/reference/common/scoping/vehicle_relation/): Relational operator, such as less than or equal to.
+- [VehicleWeightSelector](https://docs.overturemaps.org/schema/reference/common/scoping/vehicle_weight_selector/): Selects vehicles based on their weight.
+- [VehicleWidthSelector](https://docs.overturemaps.org/schema/reference/common/scoping/vehicle_width_selector/): Selects vehicles based on their width.
+- [SortKey](https://docs.overturemaps.org/schema/reference/common/sort_key/): Integer indicating the recommended order in which to draw features.
+- [SourceItem](https://docs.overturemaps.org/schema/reference/common/source_item/): Specifies the source of the data used for a feature or one of its properties.
+- [Sources](https://docs.overturemaps.org/schema/reference/common/sources/): Information about the source data used to assemble the feature.
+- [SpeedUnit](https://docs.overturemaps.org/schema/reference/common/speed_unit/): Unit of speed.
+- [WeightUnit](https://docs.overturemaps.org/schema/reference/common/weight_unit/): Unit of weight.
+- [Division](https://docs.overturemaps.org/schema/reference/divisions/division/): Divisions are recognized official or non-official organizations of people as seen from a given
+- [DivisionArea](https://docs.overturemaps.org/schema/reference/divisions/division_area/): Division areas are polygon features that represent the land or maritime area covered by a
+- [DivisionBoundary](https://docs.overturemaps.org/schema/reference/divisions/division_boundary/): Boundaries represent borders between divisions of the same subtype.
+- [AdminLevel](https://docs.overturemaps.org/schema/reference/divisions/types/admin_level/): Integer representing the division's position in its country's administrative
+- [AreaClass](https://docs.overturemaps.org/schema/reference/divisions/types/area_class/): Further classification of a division area that is more specific than its `subtype`.
+- [BoundaryClass](https://docs.overturemaps.org/schema/reference/divisions/types/boundary_class/): The kind of boundary: land or maritime.
+- [CapitalOfDivisionItem](https://docs.overturemaps.org/schema/reference/divisions/types/capital_of_division_item/): A division of which the owning division is the capital, together with its subtype.
+- [DivisionClass](https://docs.overturemaps.org/schema/reference/divisions/types/division_class/): Further classification of a division that is more specific than its `subtype`.
+- [DivisionSubtype](https://docs.overturemaps.org/schema/reference/divisions/types/division_subtype/): Category of the division from a finite, hierarchical, ordered list of categories (e.g., country,
+- [Hierarchy](https://docs.overturemaps.org/schema/reference/divisions/types/hierarchy/): A hierarchy of divisions, with the first entry being a country; each subsequent
+- [HierarchyItem](https://docs.overturemaps.org/schema/reference/divisions/types/hierarchy_item/): One division in a hierarchy.
+- [Norms](https://docs.overturemaps.org/schema/reference/divisions/types/norms/): Local norms and standards.
+- [Place](https://docs.overturemaps.org/schema/reference/places/place/): Places are point representations of real-world facilities, businesses, services, or amenities.
+- [Address](https://docs.overturemaps.org/schema/reference/places/types/address/): An address associated with a place.
+- [Brand](https://docs.overturemaps.org/schema/reference/places/types/brand/): A brand associated with a place.
+- [Categories](https://docs.overturemaps.org/schema/reference/places/types/categories/): Categories a place belongs to.
+- [OperatingStatus](https://docs.overturemaps.org/schema/reference/places/types/operating_status/): General indication of whether a place is: in continued operation, in a temporary operating
+- [Taxonomy](https://docs.overturemaps.org/schema/reference/places/types/taxonomy/): A structured representation of the place's category within the Overture taxonomy.
+- [EmailStr](https://docs.overturemaps.org/schema/reference/pydantic/networks/email_str/): See: [Pydantic docs](https://docs.pydantic.dev/latest/api/networks/#pydantic.networks.EmailStr)
+- [HttpUrl](https://docs.overturemaps.org/schema/reference/pydantic/networks/http_url/): A type that will accept any http or https URL.
+- [CountryCodeAlpha2](https://docs.overturemaps.org/schema/reference/system/country_code_alpha2/): An ISO-3166-1 alpha-2 country code.
+- [HexColor](https://docs.overturemaps.org/schema/reference/system/hex_color/): A color represented as an #RRGGBB or #RGB hexadecimal string.
+- [JsonPointer](https://docs.overturemaps.org/schema/reference/system/json_pointer/): A JSON Pointer
+- [LanguageTag](https://docs.overturemaps.org/schema/reference/system/language_tag/): A BCP-47 language tag.
+- [NoWhitespaceString](https://docs.overturemaps.org/schema/reference/system/no_whitespace_string/): A string that contains no whitespace characters.
+- [PhoneNumber](https://docs.overturemaps.org/schema/reference/system/phone_number/): An international phone number.
+- [Geometry Types](https://docs.overturemaps.org/schema/reference/system/primitive/geometry/): Spatial types for representing geographic features.
+- [Primitive Types](https://docs.overturemaps.org/schema/reference/system/primitive/primitives/): Numeric types used for schema field definitions.
+- [Id](https://docs.overturemaps.org/schema/reference/system/ref/id/): A unique identifier.
+- [RegionCode](https://docs.overturemaps.org/schema/reference/system/region_code/): An ISO 3166-2 principal subdivision code.
+- [SnakeCaseString](https://docs.overturemaps.org/schema/reference/system/snake_case_string/): A string that looks like a `snake_case` identifier, like a Python variable name (*e.g.*, `foo_bar`).
+- [StrippedString](https://docs.overturemaps.org/schema/reference/system/stripped_string/): A string without leading or trailing whitespace.
+- [WikidataId](https://docs.overturemaps.org/schema/reference/system/wikidata_id/): A wikidata ID, as found on [https://www.wikidata.org/](https://www.wikidata.org/).
+- [Connector](https://docs.overturemaps.org/schema/reference/transportation/connector/): Connectors create physical connections between segments.
+- [Segment](https://docs.overturemaps.org/schema/reference/transportation/segment/): | Name | Type | Description |
+- [AccessRestrictionRule](https://docs.overturemaps.org/schema/reference/transportation/types/access_restriction_rule/): | Name | Type | Description |
+- [AccessRestrictionRule.When](https://docs.overturemaps.org/schema/reference/transportation/types/access_restriction_rule.when/): Scopes for AccessRestrictionRule: Scope.HEADING, Scope.TEMPORAL, Scope.TRAVEL MODE, Scope.PURPOSE OF USE, Scope.RECOGNIZED STATUS and Scope.VEHICLE
+- [AccessRules](https://docs.overturemaps.org/schema/reference/transportation/types/access_rules/): Rules governing access to this road segment
+- [AccessType](https://docs.overturemaps.org/schema/reference/transportation/types/access_type/): - `allowed`
+- [ConnectorReference](https://docs.overturemaps.org/schema/reference/transportation/types/connector_reference/): Contains the GERS ID and relative position between 0 and 1 of a connector feature along the
+- [DestinationLabelType](https://docs.overturemaps.org/schema/reference/transportation/types/destination_label_type/): Indicates what special symbol/icon is present on a signpost, visible as road marking or
+- [DestinationLabels](https://docs.overturemaps.org/schema/reference/transportation/types/destination_labels/): The type of object of the destination label.
+- [DestinationRule](https://docs.overturemaps.org/schema/reference/transportation/types/destination_rule/): | Name | Type | Description |
+- [DestinationRule.When](https://docs.overturemaps.org/schema/reference/transportation/types/destination_rule.when/): Scope for DestinationRule:
+- [DestinationSignSymbol](https://docs.overturemaps.org/schema/reference/transportation/types/destination_sign_symbol/): Indicates what special symbol/icon is present on a signpost, visible as road marking or
+- [Destinations](https://docs.overturemaps.org/schema/reference/transportation/types/destinations/): Describes objects that can be reached by following a transportation segment in the same way those objects are described on signposts or ground writ...
+- [LevelRule](https://docs.overturemaps.org/schema/reference/transportation/types/level_rule/): A single level rule defining the Z-order, i.e. stacking order, applicable within a given scope
+- [LevelRules](https://docs.overturemaps.org/schema/reference/transportation/types/level_rules/): Defines the Z-order, i.e. stacking order, of the road segment.
+- [ProhibitedTransitionRule](https://docs.overturemaps.org/schema/reference/transportation/types/prohibited_transition_rule/): | Name | Type | Description |
+- [ProhibitedTransitionRule.When](https://docs.overturemaps.org/schema/reference/transportation/types/prohibited_transition_rule.when/): Scopes for ProhibitedTransitionRule: Scope.HEADING, Scope.TEMPORAL, Scope.TRAVEL MODE, Scope.PURPOSE OF USE, Scope.RECOGNIZED STATUS and Scope.VEHICLE
+- [ProhibitedTransitions](https://docs.overturemaps.org/schema/reference/transportation/types/prohibited_transitions/): Rules preventing transitions from this segment to another segment.
+- [RailClass](https://docs.overturemaps.org/schema/reference/transportation/types/rail_class/): Captures the kind of rail segment.
+- [RailFlag](https://docs.overturemaps.org/schema/reference/transportation/types/rail_flag/): Simple flags that can be on or off for a railway segment.
+- [RailFlagRule](https://docs.overturemaps.org/schema/reference/transportation/types/rail_flag_rule/): Rail-specific flag rule with geometric scoping only.
+- [RailFlags](https://docs.overturemaps.org/schema/reference/transportation/types/rail_flags/): Set of boolean attributes applicable to railways. May be specified either as a single flag array of flag values, or as an array of flag rules.
+- [RoadClass](https://docs.overturemaps.org/schema/reference/transportation/types/road_class/): Captures the kind of road and its position in the road network hierarchy.
+- [RoadFlag](https://docs.overturemaps.org/schema/reference/transportation/types/road_flag/): Simple flags that can be on or off for a road segment.
+- [RoadFlagRule](https://docs.overturemaps.org/schema/reference/transportation/types/road_flag_rule/): Road-specific flag rule with geometric scoping only.
+- [RoadFlags](https://docs.overturemaps.org/schema/reference/transportation/types/road_flags/): Set of boolean attributes applicable to roads. May be specified either as a single flag array of flag values, or as an array of flag rules.
+- [RoadSurface](https://docs.overturemaps.org/schema/reference/transportation/types/road_surface/): Physical surface of the road.
+- [RouteReference](https://docs.overturemaps.org/schema/reference/transportation/types/route_reference/): Route reference with linear referencing support.
+- [Routes](https://docs.overturemaps.org/schema/reference/transportation/types/routes/): Routes this segment belongs to
+- [SequenceEntry](https://docs.overturemaps.org/schema/reference/transportation/types/sequence_entry/): A segment/connector pair in a prohibited transition sequence.
+- [Speed](https://docs.overturemaps.org/schema/reference/transportation/types/speed/): A speed value, i.e. a certain number of distance units travelled per unit time.
+- [SpeedLimitRule](https://docs.overturemaps.org/schema/reference/transportation/types/speed_limit_rule/): An individual speed limit rule.
+- [SpeedLimitRule.When](https://docs.overturemaps.org/schema/reference/transportation/types/speed_limit_rule.when/): Scopes for SpeedLimitRule: Scope.HEADING, Scope.TEMPORAL, Scope.TRAVEL MODE, Scope.PURPOSE OF USE, Scope.RECOGNIZED STATUS and Scope.VEHICLE
+- [SpeedLimits](https://docs.overturemaps.org/schema/reference/transportation/types/speed_limits/): Rules governing speed on this road segment
+- [SpeedValue](https://docs.overturemaps.org/schema/reference/transportation/types/speed_value/): Speed value
+- [Subclass](https://docs.overturemaps.org/schema/reference/transportation/types/subclass/): Refines expected usage of the segment, must not overlap.
+- [SubclassRule](https://docs.overturemaps.org/schema/reference/transportation/types/subclass_rule/): Set of subclasses scoped along segment.
+- [SubclassRules](https://docs.overturemaps.org/schema/reference/transportation/types/subclass_rules/): Set of subclasses scoped along segment
+- [Subtype](https://docs.overturemaps.org/schema/reference/transportation/types/subtype/): Transportation segment subtype classification.
+- [SurfaceRule](https://docs.overturemaps.org/schema/reference/transportation/types/surface_rule/): | Name | Type | Description |
+- [Surfaces](https://docs.overturemaps.org/schema/reference/transportation/types/surfaces/): Physical surface of the road. May either be specified as a single global value for the segment, or as an array of surface rules.
+- [Width](https://docs.overturemaps.org/schema/reference/transportation/types/width/): Underlying type: `float64`
+- [WidthRule](https://docs.overturemaps.org/schema/reference/transportation/types/width_rule/): | Name | Type | Description |
+- [WidthRules](https://docs.overturemaps.org/schema/reference/transportation/types/width_rules/): Edge-to-edge width of the road modeled by this segment, in meters.
+- [CARTO](https://docs.overturemaps.org/examples/CARTO/): analytics ftw!
+- [QGIS](https://docs.overturemaps.org/examples/QGIS/): Load Overture data directly into QGIS
+- [Athena (AWS)](https://docs.overturemaps.org/examples/athena-aws/): You can follow the steps belows to access and query Overture data directly in AWS. Note: you will need to create an account to use [Athena](https:/...
+- [MapLibre](https://docs.overturemaps.org/examples/build-a-map/): create your own map
+- [Fused](https://docs.overturemaps.org/examples/fused/): call pre-defined UDFs, work locally and in the Fused Workbench
+- [Ibis](https://docs.overturemaps.org/examples/ibis/): query and visualize Overture data with Ibis and DuckDB
+- [Examples](https://docs.overturemaps.org/examples/): Overture Maps data examples
+- [Kepler.gl](https://docs.overturemaps.org/examples/kepler-gl/): explore Overture data in Kepler.gl
+- [Lonboard](https://docs.overturemaps.org/examples/lonboard/): fetch and visualize Overture data with Lonboard
+- [PMTiles](https://docs.overturemaps.org/examples/overture-tiles/): tiles all day long
+- [Pandas](https://docs.overturemaps.org/examples/pandas/): extract and manipulate Overture data with DuckDB and Pandas
+- [Rapid](https://docs.overturemaps.org/examples/rapid/): inspect Overture geometries in Rapid
+- [Sedona / Spark](https://docs.overturemaps.org/examples/sedona/): As a series of GeoParquet files, Overture data is already optimized for distributed computing environments. The following example shows you how to ...
+- [Spark](https://docs.overturemaps.org/examples/spark/): scale to big data with Spark
+- [Synapse (Azure)](https://docs.overturemaps.org/examples/synapse-azure/): You will need to create an account to use [Synapse](https://azure.microsoft.com/en-us/products/synapse-analytics/) and other Microsoft Azure services.
+- [Wherobots](https://docs.overturemaps.org/examples/wherobots/): [Wherobots](https://wherobots.com/) provides a cloud-native environment for geospatial data analysis, powered by [Apache Sedona](https://sedona.apa...
+- [Bridge Files](https://docs.overturemaps.org/gers/bridge-files/): With each data release, Overture generates **bridge files** that connect GERS IDs to the IDs from the [source data](/attribution). These files are ...
+- [Data Changelog](https://docs.overturemaps.org/gers/changelog/): With each data release, Overture publishes a **changelog** that capture changes in the data from the previous release to the current release. This ...
+- [GERS Tutorial](https://docs.overturemaps.org/gers/gers-tutorial/): The Overture Maps Foundation doesn’t just produce a collection of open datasets, it defines a reference system for exchanging and enriching geospat...
+- [What is GERS?](https://docs.overturemaps.org/gers/): The Global Entity Reference System (GERS) is a universal framework for structuring and matching map data across systems. GERS, coupled with Overtur...
+- [Registry](https://docs.overturemaps.org/gers/registry/): With each data release, Overture publishes a **GERS Registry** that serves as the single source of truth for all entities that are part of the Glob...
+- [Attribution and Licensing](https://docs.overturemaps.org/attribution/): Citation, attribution, and licensing information for Overture data sources, data products, and visualizations created with Overture data
+- [Index](https://docs.overturemaps.org/docs): <LandingTitle>Overture Documentation</LandingTitle>
+- [Releases](https://docs.overturemaps.org/release-calendar/): This page provides information about Overture's data and schema releases, including upcoming release dates, our versioning and schema change polici...
+- [Support](https://docs.overturemaps.org/support/): Guidelines for community and custom support for the Overture ecosystem
+- [2023-07-26-alpha.0 release notes](https://docs.overturemaps.org/blog/2023-alpha/2023-07-26-alpha.0): {/* truncate */}
+- [2023-10-19-alpha.0 release notes](https://docs.overturemaps.org/blog/2023-alpha/2023-10-19-alpha.0): - **Base Theme**: A new Base theme that provides three context data subtypes. These can be used with the other themes to allow developers to build ...
+- [2023-11-14-alpha.0 release notes](https://docs.overturemaps.org/blog/2023-alpha/2023-11-14-alpha.0): {/* truncate */}
+- [2023-12-14-alpha.0 release notes](https://docs.overturemaps.org/blog/2023-alpha/2023-12-14-alpha.0): {/* truncate */}
+- [2024-07-22.0 release notes](https://docs.overturemaps.org/blog/2024/2024-07-22.0): **Overture's `2024-07-22.0` data release and `v1.0.0` of the schema are now available.** The base, buildings, divisions, and places themes have rea...
+- [2024-08-20.0 release notes](https://docs.overturemaps.org/blog/2024/2024-08-20.0): **Overture's `2024-08-20.0` data release is now available.** The base, buildings, divisions, and places themes are stable, which means the only cha...
+- [2024-09-18.0 release notes](https://docs.overturemaps.org/blog/2024/2024-09-18.0): **The `2024-09-18.0` release of Overture data is now available.**  We are still on `v.1.1.0` of the Overture schema, as we did not cut a new schema...
+- [2024-10-23.0 release notes](https://docs.overturemaps.org/blog/2024/2024-10-23.0): **The `2024-10-23.0` release of Overture data and `v1.2.0` of the Overture schema are now available.** As part of Overture's mission to improve dat...
+- [2024-11-13.0 release notes](https://docs.overturemaps.org/blog/2024/2024-11-13.0): **The `2024-11-13.0` release of Overture data and `v1.3.0` of the Overture schema are now available.** This release includes more than 66 unique ad...
+- [2024-12-18.0 release notes](https://docs.overturemaps.org/blog/2024/2024-12-18.0): **The `2024-12-18.0` release of Overture data and `v1.4.0` of the Overture schema are now available.** This month [our transportation theme is goin...
+- [Welcome to the Overture Maps engineering blog!](https://docs.overturemaps.org/blog/2024-04-21-welcome): Welcome to the Overture Maps engineering blog!
+- [Exploring our beta release](https://docs.overturemaps.org/blog/2024-04-22-beta-release): Highlights from Overture Maps beta release
+- [Land cover is live](https://docs.overturemaps.org/blog/2024-05-16-land-cover): <video autoPlay loop muted playsInline style={{ width: '100%' }}>
+- [Exploring Overture data, no SQL required](https://docs.overturemaps.org/blog/2024-07-24-explore-site): Overture has launched a new browser-based tool to give users a no-code option to interact with our data. The Explore website is now the quickest wa...
+- [What to expect in Overture's August release](https://docs.overturemaps.org/blog/2024-08-15-preview-august-release): Last month we released [v1.0.0 of the Overture schema and “general availability” versions of four themes](https://overturemaps.org/overture-maps-fo...
+- [What to expect in Overture's October release](https://docs.overturemaps.org/blog/2024-10-21-preview-october-release): This week Overture is [releasing](https://docs.overturemaps.org/release/latest/) datasets that include new
+- [Transportation theme navigates to GA](https://docs.overturemaps.org/blog/2024-12-18-transportation-to-ga): Over the past several releases, Overture has been laying the groundwork to transition our transportation theme from beta to general availability (G...
+- [2024-01-17-alpha.0 release notes](https://docs.overturemaps.org/blog/2024-alpha/2024-01-17-alpha.0): {/* truncate */}
+- [2024-02-15-alpha.0 release notes](https://docs.overturemaps.org/blog/2024-alpha/2024-02-15-alpha.0): {/* truncate */}
+- [2024-03-12-alpha.0 release notes](https://docs.overturemaps.org/blog/2024-alpha/2024-03-12-alpha.0): {/* truncate */}
+- [2024-04-16-beta.0 release notes](https://docs.overturemaps.org/blog/2024-beta/2024-04-16-beta.0): Overture Maps `2024-04-16-beta.0` is available in GeoParquet and stored on AWS and Azure. Users can select the data of interest and download it by ...
+- [2024-05-16-beta.0 release notes](https://docs.overturemaps.org/blog/2024-beta/2024-05-16-beta.0): Here's what's new and updated in the Overture Maps `2024-05-16-beta.0` release. The "beta" designation indicates the data and schema are largely st...
+- [2024-06-13-beta.1 release notes](https://docs.overturemaps.org/blog/2024-beta/2024-06-13-beta.0): :::info
+- [2025-01-22 release notes](https://docs.overturemaps.org/blog/2025-01-22-release-notes): **The `2025-01-22.0` release of Overture data and `v1.5.0` of the Overture schema are now available.**
+- [2025-02-19 release notes](https://docs.overturemaps.org/blog/2025-02-19-release-notes): **The `2025-02-19.0` release of Overture data and `v1.6.0` of the Overture schema are now available.**
+- [2025-03-19 release notes](https://docs.overturemaps.org/blog/2025-03-19-release-notes): :::info
+- [2025-04-23 release notes](https://docs.overturemaps.org/blog/2025-04-23-release-notes): **The `2025-04-23.0` release of Overture data and `v1.8.0` of the Overture schema are now available.** This month we fixed several data issues and ...
+- [2025-05-21 release notes](https://docs.overturemaps.org/blog/2025-05-21-release-notes): **The `2025-05-21.0` release of Overture data and `v1.9.0` of the Overture schema are now available.** This month we added [PinMeTo](/attribution/#...
+- [Using the GERS "system"](https://docs.overturemaps.org/blog/2025-06-25-getting-started-gers): In the June release, we introduced new components of GERS, including a [new format for GERS IDs](https://github.com/orgs/OvertureMaps/discussions/3...
+- [2025-06-25 release notes](https://docs.overturemaps.org/blog/2025-06-25-release-notes): **The `2025-06-25.0` release of Overture data and `v1.10.0` of the Overture schema are now available.** We're pleased to annouce that GERS is now i...
+- [2025-07-23 release notes](https://docs.overturemaps.org/blog/2025-07-23-release-notes): **The `2025-07-23.0` release of Overture data and `v1.11.0` of the Overture schema are now available.** The datasets and release artifacts are avai...
+- [2025-08-20 release notes](https://docs.overturemaps.org/blog/2025-08-20-release-notes): :::info
+- [2025-09-24 release notes](https://docs.overturemaps.org/blog/2025-09-24-release-notes): :::warning
+- [2025-10-22 release notes](https://docs.overturemaps.org/blog/2025-10-22-release-notes): :::warning
+- [2025-11-19 release notes](https://docs.overturemaps.org/blog/2025-11-19-release-notes): **The `2025-11-19.0` release of Overture data and `v1.14.0` of the Overture schema are now available.** The datasets and release artifacts are avai...
+- [2025-12-17 release notes](https://docs.overturemaps.org/blog/2025-12-17-release-notes): **The `2025-12-17.0` release of Overture data and `v1.15.0` of the Overture schema are now available.** The datasets and release artifacts are avai...
+- [2026-01-21 release notes](https://docs.overturemaps.org/blog/2026-01-21-release-notes): **The `2026-01-21.0` release of Overture data and `v1.15.0` of the Overture schema are now available.** The datasets and release artifacts are avai...
+- [Overture Has Fully Embraced STAC](https://docs.overturemaps.org/blog/2026-02-11-stac): Over the past few releases, the Overture engineering team has gone from generating a [STAC catalog](https://stacspec.org/en) as an ad hoc release a...
+- [2026-02-18 release notes](https://docs.overturemaps.org/blog/2026-02-18-release-notes): **The `2026-02-18.0` release of Overture data and `v1.16.0` of the Overture schema are now available.** You can access the datasets, changelog, GER...
+- [The Day Explorer Turned Pretty](https://docs.overturemaps.org/blog/2026-03-12-explorer-got-pretty): When we launched [Explorer](https://explore.overturemaps.org) back in the summer of 2024, we described it as an "x-ray data inspector" and made a d...
+- [2026-03-18 release notes](https://docs.overturemaps.org/blog/2026-03-18-release-notes): :::note
+- [2026-04-15 release notes](https://docs.overturemaps.org/blog/2026-04-15-release-notes): **The `2026-04-15.0` release of Overture data and `v1.16.0` of the Overture schema are now available.** You can access the datasets, changelog, GER...
+- [2026-05-20 release notes](https://docs.overturemaps.org/blog/2026-05-20-release-notes): **The `2026-05-20.0` release of Overture data and `v1.17.0` of the Overture schema are now available.** This month we added BrightQuery as a new PO...
+- [Developer Tenets](https://docs.overturemaps.org/blog/2026-05-29-developer-tenets): Open data projects like Overture are built across time. Contributors come and go, member companies rotate people in and out, and the builders of to...
+- [2026-06-17 release notes](https://docs.overturemaps.org/blog/2026-06-17-release-notes): **The `2026-06-17.0` release of Overture data and `v1.17.0` of the Overture schema are now available.** You can access the datasets, changelog, GER...
+- [Speeding Up Overture Tiles](https://docs.overturemaps.org/blog/2026-06-30-speeding-up-tiles): Each [Overture Release](/blog/2026/06/17/release-notes/) includes the core dataset of GeoParquet features, the GERS registry, GERS bridge files, an...
+- [2026-07-22 release notes](https://docs.overturemaps.org/blog/2026-07-22-release-notes): **The `2026-07-22.0` release of Overture data and `v1.18.0` of the Overture schema are now available.** You can access the datasets, changelog, GER...
