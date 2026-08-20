@@ -31,6 +31,13 @@ tags:
   - Geospatial
   - Open Data
   - GeoParquet
+  - Open-Source
+  - Linux Foundation
+tags_raw:
+  - Maps
+  - Geospatial
+  - Open Data
+  - GeoParquet
   - Open Source
   - Linux Foundation
 created: '2026-05-23'
@@ -138,6 +145,10 @@ apis:
     baseURL: https://github.com/OvertureMaps/schema
     tags:
       - Schema
+      - Open-Source
+      - Specification
+    tags_raw:
+      - Schema
       - Open Source
       - Specification
     properties:
@@ -172,6 +183,10 @@ apis:
     tags:
       - CLI
       - Python
+      - Open-Source
+    tags_raw:
+      - CLI
+      - Python
       - Open Source
     properties:
       - type: Repository
@@ -198,6 +213,10 @@ apis:
     humanURL: https://github.com/OvertureMaps/overture-tiles
     baseURL: https://github.com/OvertureMaps/overture-tiles
     tags:
+      - Tiles
+      - Rendering
+      - Open-Source
+    tags_raw:
       - Tiles
       - Rendering
       - Open Source
