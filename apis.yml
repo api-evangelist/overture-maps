@@ -13,6 +13,19 @@ description: >-
   Wherobots), and provides an open Python CLI, a tile generator, and an
   Explorer site for developers. Founding members include Amazon, Meta,
   Microsoft, and TomTom.
+deliveryModel:
+  model: saas
+  license: CC-BY-4.0
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - license
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: free
   onboarding: unknown
@@ -224,6 +237,14 @@ apis:
       - type: Repository
         url: https://github.com/OvertureMaps/overture-tiles
 common:
+  - type: IssueTracker
+    url: https://github.com/OvertureMaps/schema/issues
+  - type: Releases
+    url: https://github.com/OvertureMaps/schema/releases
+  - type: CodeOfConduct
+    url: https://github.com/OvertureMaps/.github/blob/main/CODE_OF_CONDUCT.md
+  - type: ContributionGuide
+    url: https://github.com/OvertureMaps/schema/blob/main/CONTRIBUTING.md
   - type: License
     name: CC-BY-4.0
     url: https://github.com/OvertureMaps/schema/blob/main/LICENSE
