@@ -2,25 +2,21 @@
   "repo": "overture-maps",
   "feeds": [
     {
+      "source": "https://overturemaps.org/blog/",
+      "feed_url": "https://overturemaps.org/blog/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    },
+    {
       "source": "https://overturemaps.org/feed/",
       "feed_url": "https://overturemaps.org/feed/",
       "title": "",
       "saved": 0,
-      "method": "feed",
-      "nature": "vendor-blog",
-      "nature_basis": "path_blog"
-    },
-    {
-      "source": "https://overturemaps.org/blog/",
-      "feed_url": "https://overturemaps.org/feed/",
-      "title": "",
-      "saved": 0,
-      "method": "discovered",
-      "nature": "vendor-blog",
-      "nature_basis": "path_blog"
+      "method": "feed"
     }
   ],
-  "fetched": "2026-08-30T22:33:40Z",
+  "fetched": "2026-09-06T19:17:18Z",
   "post_count": 15,
   "feed_nature": "vendor-blog",
   "feed_nature_basis": "path_blog",
