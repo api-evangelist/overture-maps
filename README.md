@@ -1,4 +1,4 @@
-# overture-maps
+# Overture Maps Foundation
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,4 +64,113 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Overture Maps Foundation — open geospatial data (Linux Foundation)
+Overture Maps Foundation is a Linux Foundation collaborative project that produces free, open, and interoperable map data. Overture publishes cloud-native GeoParquet datasets, on a regular release cadence, across six themes - Addresses, Base, Buildings, Divisions, Places, and Transportation - governed by a common conflation pipeline and an open schema. Rather than a hosted REST API, Overture distributes data through Amazon S3 and Microsoft Azure (and via partner mirrors on BigQuery, Snowflake, Databricks, Fused, Wherobots), and provides an open Python CLI, a tile generator, and an Explorer site for developers. Founding members include Amazon, Meta, Microsoft, and TomTom.
+
+**Areas:** Maps · Geospatial · Open Data · GeoParquet · Open Source · Linux Foundation
+
+## Overture Maps Foundation on APIs.io
+
+Everything profiled for Overture Maps Foundation is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/overture-maps/](https://apis.io/providers/overture-maps/)** — or go straight to one of the APIs or properties below.
+
+### APIs (11)
+
+- [Overture Addresses Theme](https://apis.io/apis/overture-maps/addresses/) — Open dataset of global address points and ranges, released as cloud-native GeoParquet alongside the other Overture themes.
+- [Overture Base Theme](https://apis.io/apis/overture-maps/base/) — Open dataset of base map features - land cover, water, land use, infra - released as cloud-native GeoParquet to serve as a foundation for map rendering.
+- [Overture Buildings Theme](https://apis.io/apis/overture-maps/buildings/) — Open dataset of global building footprints with attributes (heights, classes, sources), released as cloud-native GeoParquet.
+- [Overture Divisions Theme](https://apis.io/apis/overture-maps/divisions/) — Open dataset of administrative and statistical boundaries (countries, regions, counties, localities, neighborhoods) released as cloud-native GeoParquet.
+- [Overture Places Theme](https://apis.io/apis/overture-maps/places/) — Open dataset of global points of interest - businesses, landmarks, and services - released as cloud-native GeoParquet with categories, addresses, and…
+- [Overture Transportation Theme](https://apis.io/apis/overture-maps/transportation/) — Open dataset of the global road and transportation network (segments and connectors) released as cloud-native GeoParquet, suitable for routing and analytics.
+- [Overture Schema](https://apis.io/apis/overture-maps/schema/) — Canonical open schema specification for all Overture themes, maintained in the OvertureMaps/schema GitHub repository and versioned with each data release.
+- [Overture Data Releases](https://apis.io/apis/overture-maps/data/) — Repository of release notes, cloud paths (Amazon S3 and Microsoft Azure), and access scripts for every Overture data release. Datasets are distributed as…
+- [Overture Maps Python CLI](https://apis.io/apis/overture-maps/cli/) — Open-source Python command-line tool and library for downloading and querying Overture data. Maintained at OvertureMaps/overturemaps-py.
+- [Overture Explorer](https://apis.io/apis/overture-maps/explorer/) — Interactive web explorer for browsing and inspecting Overture features across themes and releases.
+- [Overture Tiles](https://apis.io/apis/overture-maps/tiles/) — Open tile-generation tooling that builds vector tilesets from Overture data for rendering and downstream applications.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Overture Maps Domain Security](https://apis.io/security/overture-maps/overture-maps-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Overture Maps Plans Pricing](https://apis.io/plans/overture-maps/overture-maps-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Overture Maps Rate Limits](https://apis.io/rate-limits/overture-maps/overture-maps-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Overture Maps Finops](https://apis.io/finops/overture-maps/overture-maps-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://overturemaps.org/)
+- [Documentation](https://docs.overturemaps.org/)
+- [Blog](https://overturemaps.org/blog/)
+
+## API Evangelist rating
+
+**Kin Score 13.6** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 78.6 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 5.3 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Government & Public Sector
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/overture-maps/](https://apis.io/providers/overture-maps/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Overture Maps Foundation: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/overture-maps/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
